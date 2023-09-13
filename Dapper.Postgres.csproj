@@ -4,11 +4,25 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Dapper.Postgres</Title>
+	<Authors>Aidan Bleser</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>An extension of NpgsqlConnection and Dapper to allow for easier use of Postgres functions.</Description>
+    <PackageTags>Postgres, Dapper, Functions</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.151" />
     <PackageReference Include="Npgsql" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

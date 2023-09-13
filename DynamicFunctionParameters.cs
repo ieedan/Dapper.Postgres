@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dapper.Postgres.Models
+namespace Dapper.Postgres
 {
     /// <summary>
     /// Extends Dapper's DynamicParameters but modifies the behavior slightly so that every attribute is added to the list.

@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using Dapper.Postgres.Models;
 using Npgsql;
 using System;
 using System.Collections.Generic;

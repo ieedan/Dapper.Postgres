@@ -2,7 +2,7 @@
 An extension of NpgsqlConnection and Dapper to allow for easier use of Postgres functions.
 
 ### Why?
-If you aren't a fan of writing parameterized queries and would rather have your logic in functions in your database then this Dapper extension should benifit you.
+If you aren't a fan of writing parameterized queries and would rather have your logic in functions in your database then this Dapper extension should benefit you.
 
 ### What does it do?
 Dapper.Postgres writes the parameterized query on the function for you so you don't have to write the statements yourself. It simply extends the functionality of DynamicParameters with a slightly different implementation to allow for use with functions.

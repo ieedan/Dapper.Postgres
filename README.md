@@ -1,2 +1,2 @@
 # Dapper.Postgres
-Class library leveraging features of Dapper to make Postgres functions easy to work with in C#.
+An extension of NpgsqlConnection and Dapper to allow for easier use of Postgres functions.

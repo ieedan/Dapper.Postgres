@@ -56,6 +56,8 @@ namespace Dapper.Postgres
 
             if (this != null)
             {
+                if (this.ParameterNames.Count() == 0) return "";
+
                 var paramNames = this.ParameterNames.ToList();
 
                 for (int i = 0; i < paramNames.Count; i++)

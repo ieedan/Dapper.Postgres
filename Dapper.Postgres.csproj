@@ -11,9 +11,9 @@
     <Description>An extension of NpgsqlConnection and Dapper to allow for easier use of Postgres functions.</Description>
     <PackageTags>Postgres, Dapper, Functions</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <Version>0.0.4</Version>
-    <AssemblyVersion>0.0.4</AssemblyVersion>
-    <FileVersion>0.0.4</FileVersion>
+    <Version>0.0.5</Version>
+    <AssemblyVersion>0.0.5</AssemblyVersion>
+    <FileVersion>0.0.5</FileVersion>
     <PackageProjectUrl>https://github.com/ieedan/Dapper.Postgres</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ieedan/Dapper.Postgres</RepositoryUrl>
   </PropertyGroup>

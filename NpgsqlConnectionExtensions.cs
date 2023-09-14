@@ -103,6 +103,52 @@ namespace Dapper.Postgres
         }
 
         /// <summary>
+        /// Calls a Postgres function as a parameterized query and returns an item of the specified type;
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="connection"></param>
+        /// <param name="function"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public static T QueryFunctionFirstOrDefault<T>(this NpgsqlConnection connection, string function, DynamicFunctionParameters? parameters = null)
+        {
+            string param = "";
+            if (parameters != null)
+            {
+                param = parameters.GetParameterList();
+            }
+
+            string query = $"SELECT * FROM {function}({param});";
+
+            T result = connection.QueryFirstOrDefault<T>(query, parameters);
+
+            return result;
+        }
+
+        /// <summary>
+        /// Calls a Postgres function as a parameterized query and returns an item of the specified type;
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="connection"></param>
+        /// <param name="function"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public static async Task<T> QueryFunctionFirstOrDefaultAsync<T>(this NpgsqlConnection connection, string function, DynamicFunctionParameters? parameters = null)
+        {
+            string param = "";
+            if (parameters != null)
+            {
+                param = parameters.GetParameterList();
+            }
+
+            string query = $"SELECT * FROM {function}({param});";
+
+            T result = await connection.QueryFirstOrDefaultAsync<T>(query, parameters);
+
+            return result;
+        }
+
+        /// <summary>
         /// Calls a Postgres function as a parameterized query and returns a item of the specified type. 
         /// </summary>
         /// <typeparam name="T"></typeparam>

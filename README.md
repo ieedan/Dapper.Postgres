@@ -11,6 +11,8 @@ Dapper.Postgres writes the parameterized query on the function for you so you do
 - `QueryFunction<T>`
 - `QueryFunctionFirst<T>`
 - `ExecuteFunction<T>`
+- `QueryFunctionOrDefault<T>`
+- `QueryFunctionOrDefaultAsync<T>`
 - `QueryFunctionAsync<T>`
 - `QueryFunctionFirstAsync<T>`
 - `ExecuteFunctionAsync<T>`
